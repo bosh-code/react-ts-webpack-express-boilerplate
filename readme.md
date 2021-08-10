@@ -11,7 +11,7 @@ Use `npm` or `yarn` to install and run.
 npm install
 ```
 ```shell
-yarn
+rm package-lock.json && yarn
 ```
 #### *The post install script will also build the project.*
 
@@ -25,7 +25,7 @@ npm run build
 ```shell
 yarn build
 ```
-> `npm run build` Builds the client and server from the TypeScript source code
+> The `build` script builds the client and server from the TypeScript source code
 See [scripts](#scripts) for more options, including a prod build.
 
 ## Usage

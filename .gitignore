@@ -2,6 +2,9 @@
 app.js
 .idea
 
+# use npm by default
+yarn.lock
+
 # Built Files
 dist
 *.map
