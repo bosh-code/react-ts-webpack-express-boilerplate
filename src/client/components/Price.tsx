@@ -3,7 +3,7 @@ import { getPrice } from '../api/client'
 
 const Price = (): React.ReactElement => {
   const [price, setPrice] = useState()
-  console.log(price)
+
   useEffect(() => {
     getPrice()
       .then(result => setPrice(result))
@@ -12,7 +12,7 @@ const Price = (): React.ReactElement => {
 
   return (
     <>
-      <h1>{price}</h1>
+      <h1 className="text-2xl text-gray-700">{price}</h1>
     </>
   )
 }

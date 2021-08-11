@@ -8,6 +8,7 @@ yarn.lock
 # Built Files
 dist
 *.map
+src/server/public/stylesheets/index.css
 
 # env
 .env

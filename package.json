@@ -5,13 +5,17 @@
   "main": "dist/server/index.js",
   "scripts": {
     "postinstall": "npm run build",
+    "prestart": "npm run build:tailwind",
     "start": "node server dist/server/index.js",
+    "prebuild": "npm run build:tailwind",
     "build": "run-p build:client build:server",
     "build:watch": "tsc --build ./ --watch",
     "build:client": "tsc --build ./src/client",
     "build:watch:client": "tsc --build ./src/client --watch",
     "build:server": "tsc --build ./src/server",
     "build:watch:server": "tsc --build ./src/server --watch",
+    "build:tailwind": "tailwindcss build -i src/client/stylesheets/index.css -o src/server/public/stylesheets/index.css -c ./tailwind.config.js",
+    "predev": "npm run build:tailwind",
     "dev": "run-p build:watch:client build:watch:server dev:client dev:server",
     "dev:client": "npm run webpack -- --watch",
     "dev:server": "nodemon --watch server dist/server/index.js",
@@ -21,6 +25,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "classnames": "^2.3.1",
     "cookie-parser": "^1.4.5",
     "debug": "~4.3.2",
     "dotenv": "^10.0.0",
@@ -31,7 +36,8 @@
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "redux": "^4.1.0",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "tailwindcss": "^2.2.7"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",
