@@ -73,12 +73,6 @@
     "sourceMap": true
   },
   "exclude": [
-    "node_modules",
-    "server/public/bundle.js",
-    "server/bin/www",
-    "webpack.config.js",
-    ".eslintrc.js",
-    "../../dist/server",
-    "../../dist/client"
+
   ]
 }
