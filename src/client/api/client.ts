@@ -10,7 +10,7 @@ export const getPrice = async () => {
   try {
     const { data } = await instance.get('/api/v1')
     return data
-  } catch (error) {
+  } catch (error: any) {
     return {
       error: error.message
     }

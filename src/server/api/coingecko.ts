@@ -10,7 +10,7 @@ export const getPrice = async (coinId: string, currency: string) => {
   try {
     const { data } = await instance.get(`/simple/price?ids=${coinId}&vs_currencies=${currency}`)
     return data[coinId][currency]
-  } catch (error) {
+  } catch (error: any) {
     return {
       error: error.message
     }
