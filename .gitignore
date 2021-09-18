@@ -280,3 +280,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/webstorm+all,macos,windows,node,react
+/src/server/public/stylesheets/index.css
