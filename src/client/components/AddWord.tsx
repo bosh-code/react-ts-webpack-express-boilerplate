@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { addWord } from '../actions'
 import { ThunkDispatch } from 'redux-thunk'
+import {Input} from "reactstrap";
 
 // TODO: Is this dispatch type ok?
 const submitWord = (event: React.KeyboardEvent<HTMLInputElement>, dispatch: ThunkDispatch<any, any, any>) => {
@@ -12,7 +13,7 @@ const submitWord = (event: React.KeyboardEvent<HTMLInputElement>, dispatch: Thun
 }
 
 const AddWord = (props: { dispatch: ThunkDispatch<any, any, any> }) => (
-  <input
+  <Input
     placeholder='Enter a word or phrase'
     onKeyUp={e => {
       submitWord(e, props.dispatch)

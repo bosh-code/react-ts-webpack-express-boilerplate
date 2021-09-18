@@ -12,7 +12,7 @@ const Price = (): React.ReactElement => {
 
   return (
     <>
-      <h1>{price}</h1>
+      <h1 className='display-6'>{price}</h1>
     </>
   )
 }

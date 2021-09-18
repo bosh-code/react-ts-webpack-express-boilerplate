@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import Word from './Word'
+import List from "reactstrap/es/List";
 
 interface IWord {
   id: number,
@@ -10,13 +11,13 @@ interface IWord {
 
 const Words = ({ words }: { words: IWord[] }): React.ReactElement => {
   return (
-    <div>
+    <List>
       {words.map((word: IWord) =>
         <Word key={word.id}
               {...word}
         />
       )}
-    </div>
+    </List>
   )
 }
 
