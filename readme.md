@@ -77,9 +77,7 @@ boilerplate-ts-express/
 │       │   ├── images/
 │       │   │   └── favicon.ico
 │       │   ├── stylesheets/
-│       │   │   ├── index.scss
-│       │   │   └── normalize.css
-│       │   └── index.html/
+│       │   └── index.html
 │       ├── routes/
 │       │   ├── api.ts
 │       │   └── index.ts
