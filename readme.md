@@ -5,11 +5,12 @@ Fullstack react-express using typescript + webpack
 
 ## Installation
 
-Use `npm` or `yarn` to install and run.
+Use `npm` **or** `yarn` to install and run.
 
 ```shell
 npm install
 ```
+or
 ```shell
 rm package-lock.json && yarn
 ```
@@ -22,6 +23,7 @@ rm package-lock.json && yarn
 ```shell
 npm run build 
 ```
+or
 ```shell
 yarn build
 ```
@@ -29,16 +31,20 @@ yarn build
 See [scripts](#scripts) for more options, including a prod build.
 
 ## Usage
-
+Development:
 ```shell
-npm run dev # for development builds
+npm run dev
 ```
+or
 ```shell
-yarn build
+yarn dev
 ```
+---
+Production:
 ```shell
-npm run start # for prod builds 
+npm run start 
 ```
+or
 ```shell
 yarn start
 ```
